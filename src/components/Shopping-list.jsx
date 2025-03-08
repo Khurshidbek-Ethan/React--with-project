@@ -1,16 +1,10 @@
-const ShoppingList = () => {
+import ShoppingListItem from './Shopping-list-item'
+const ShoppingList = ({ data }) => {
 	return (
 		<div className='shopping-list'>
-			<div className='list-item'>
-				<div className='item-info'>
-					<span>14</span>
-					<p>BUY Bananas</p>
-				</div>
-				<div className='item-actions'>
-					<span className='check'>&#10003;</span>
-					<span className='times'>&times;</span>
-				</div>
-			</div>
+			{data.map(item => (
+				<ShoppingListItem item={item} key={item.id} />
+			))}
 		</div>
 	)
 }

@@ -1,5 +1,13 @@
 const Filter = () => {
-	return <h1>Filter</h1>
+	return (
+		<div className='filter'>
+			<div className='btns'>
+				<button className='active'>All products</button>
+				<button>Completed</button>
+				<button>Big size</button>
+			</div>
+		</div>
+	)
 }
 
 export default Filter
