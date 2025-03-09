@@ -217,6 +217,18 @@
 	color: #000;
 }
 
+/* Search  Panel*/
+.search {
+	border-radius: 5px;
+	background: rgba(255, 255, 255, 0.6);
+	height: 45px;
+	outline: none;
+	border: none;
+	padding: 0 10px;
+	width: 100%;
+	margin-top: 20px;
+}
+
 @media only screen and (max-width: 900px) {
 	.wrapper {
 		grid-template-columns: 100%;
