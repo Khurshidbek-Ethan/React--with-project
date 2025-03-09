@@ -19,7 +19,8 @@ class ShoppingAddForm extends React.Component {
 			title: this.state.title,
 			number: this.state.number,
 		}
-		console.log(data)
+		// console.log(data)
+		this.props.onAddItem(data)
 	}
 
 	render() {
